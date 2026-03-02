@@ -1,0 +1,80 @@
+* {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #fdfdfd;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding: 80px 150px;
+
+  height: 800px;
+
+  background-image: url("../img/sao-paulo.png");
+  background-color: #d0d0d0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+
+  color: #fff;
+
+  gap: 10vh;
+
+  border-radius: 0px 0px 50px 50px;
+}
+
+.menu h1 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 120px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.menu div h2 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 64px;
+  text-align: center;
+  font-weight: 400;
+  width: 800px;
+}
+
+.menu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu-link {
+  background-color: hsla(0, 0%, 0%, 0.288);
+
+  width: 400px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1.5px solid #fff;
+
+  box-shadow: rgba(255, 255, 255, 0.24) 0px 20px 50px;
+  transition: 0.5s;
+}
+
+.menu-link:hover {
+  transform: scale(1.05);
+}
+
+.menu-link a {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
