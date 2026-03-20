@@ -1,6 +1,6 @@
 Algoritmo "soma"
 // Disciplina   : [Lógica de Programação com VisualG]
-// Professor   : Jailson Professor Obama
+// Professor   : Jailson Professor coxinha
 // Descrição   : Solicita dois números, soma e exibe o resultado
 // Autor(a)    : Guilherme Custódio Nieto
 // Data atual  : 19/03/2026
@@ -12,6 +12,8 @@ resultado: inteiro
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
+Escreval("Programa de Soma!")
+
 Escreva("Escreva o primeiro número a ser somado: ")
 Leia(numero1)
 Escreva("Escreva o segundo número a ser somado: ")
