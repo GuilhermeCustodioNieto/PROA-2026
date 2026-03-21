@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="product">
+      <div class="product-small-img">
+        <img
+          src="assets/image1.png"
+          alt="Imagem de roupas 1"
+          onclick="switchImage(this)"
+        />
+        <img
+          src="assets/image2.png"
+          alt="Imagem de roupas 2"
+          onclick="switchImage(this)"
+        />
+        <img
+          src="assets/image3.png"
+          alt="Imagem de roupas 3"
+          onclick="switchImage(this)"
+        />
+        <img
+          src="assets/image4.png"
+          alt="Imagem de roupas 4"
+          onclick="switchImage(this)"
+        />
+        <img
+          src="assets/image5.png"
+          alt="Imagem de roupas 5"
+          onclick="switchImage(this)"
+        />
+      </div>
+      <div class="img-container">
+        <img
+          src="assets/image1.png"
+          alt="Imagem de roupas principal"
+          id="imageBox"
+        />
+      </div>
+    </div>
+    <script>
+      function switchImage(smallImg) {
+        var fullImg = document.getElementById("imageBox");
+        fullImg.src = smallImg.src;
+      }
+    </script>
+  </body>
+</html>
+<!-- https://www.youtube.com/watch?v=EoOK-YG-C1o&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHyP9R&index=19 -->
