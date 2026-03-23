@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Discover Locations</title>
+  </head>
+  <body>
+    <div id="hero">
+      <div class="navbar">
+        <img src="assets/logo.png" alt="logo" class="logo" />
+        <div class="user">
+          <button type="button">Explore</button>
+          <img src="assets/user.png" alt="User photo" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="info">
+          <h1>DISCOVER</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            tempore quia tempora at deserunt libero <br />
+            earum maxime quae dolores, dolorem cum optio deleniti temporibus,
+            aliquid reprehenderit vitae <br />voluptatibus voluptatem?
+            Blanditiis!
+          </p>
+
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="slider">
+        <img src="assets/left-arrow.png" alt="left arrow" id="prev" />
+
+        <div class="preview">
+          <img
+            src="assets/small1.png"
+            alt="thumbnail"
+            class="active thumbnail"
+          />
+          <img src="assets/small2.png" alt="thumbnail" class="thumbnail" />
+          <img src="assets/small3.png" alt="thumbnail" class="thumbnail" />
+          <img src="assets/small4.png" alt="thumbnail" class="thumbnail" />
+          <img src="assets/small5.png" alt="thumbnail" class="thumbnail" />
+        </div>
+
+        <img src="assets/right-arrow.png" alt="right arrow" id="next" />
+      </div>
+    </div>
+
+    <script>
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
+      var thumbnail = document.getElementsByClassName("thumbnail");
+      var hero = document.getElementById("hero");
+
+      var backgroundImage = new Array(
+        "./assets/bg1.png",
+        "./assets/bg2.png",
+        "./assets/bg3.png",
+        "./assets/bg4.png",
+        "./assets/bg5.png",
+      );
+
+      let i = 0;
+      next.onclick = function () {
+        if (i < 4) {
+          hero.style.backgroundImage = 'url("' + backgroundImage[i + 1] + '")';
+          thumbnail[i + 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i++;
+        }
+      };
+
+      prev.onclick = function () {
+        if (i > 0) {
+          hero.style.backgroundImage = 'url("' + backgroundImage[i + 1] + '")';
+          thumbnail[i - 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i--;
+        }
+      };
+    </script>
+  </body>
+</html>
+<!-- https://www.youtube.com/watch?v=wYuQM7__D1M&list=PLjwm_8O3suyOwElnplQ3quKEHsOuHyP9R&index=34 -->
