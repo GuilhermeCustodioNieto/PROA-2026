@@ -12,40 +12,48 @@ Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    Escreval("Sistema bancário da escavadeira")
    Escreval("")
-   Escreval("Entre com sua agência, sua conta e sua senha")
-   Escreval("")
+   repita
+      Escreval("Entre com sua agência, sua conta e sua senha")
+      Escreval("")
 
 
 
-   Escreval("Informe a sua agência")
-   leia(agencia)
-   tempo 55
-   limpatela
-
-
-   Escreval("Sistema bancário da escavadeira")
-   Escreval("")
-   Escreval("Informe a sua conta")
-   leia(conta)
-   tempo 55
-   limpatela
-
-   Escreval("Sistema bancário da escavadeira")
-   Escreval("")
-   Escreval("Entre com sua agência, sua conta e sua senha")
-   Escreval("")
-   Escreval("Informe a sua senha")
-   leia(senha)
-   tempo 55
-   limpatela
-
-   se (agencia =    1234) e (conta = 5678) e (senha = 1234) entao
-      escreval("Acesso permitido")
+      Escreval("Informe a sua agência")
+      leia(agencia)
       tempo 55
-   senao
-      escreval("Acesso negado")
+      limpatela
+
+
+      Escreval("Sistema bancário da escavadeira")
+      Escreval("")
+
+      Escreval("Informe a sua conta")
+      leia(conta)
       tempo 55
-   fimse
+      limpatela
+
+      Escreval("Sistema bancário da escavadeira")
+      Escreval("")
+      Escreval("Entre com sua agência, sua conta e sua senha")
+      Escreval("")
+      Escreval("Informe a sua senha")
+      leia(senha)
+      tempo 55
+      limpatela
+
+      se (agencia =    1234) e (conta = 5678) e (senha = 1234) entao
+         escreval("Acesso permitido")
+         tempo 55
+      senao
+         escreval("Acesso negado")
+         tempo 55
+      fimse
+
+      tempo 800
+      limpatela
+
+
+   ate (agencia =    1234) e (conta = 5678) e (senha = 1234)
 
    tempo 55
    Escreval("Sistema bancário da escavadeira")
@@ -59,5 +67,6 @@ Inicio
    Escreval("6 - Pix")
    Escreval("7 - Empréstimo")
    Escreval("8 - Cartões")
+
 
 Fimalgoritmo
