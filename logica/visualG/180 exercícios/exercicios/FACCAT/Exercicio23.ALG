@@ -3,7 +3,7 @@ Algoritmo "Exercicio23"
 // Professor   : Jailson Santos
 // Descrição   :  Ler um valor e escrever se é positivo ou negativo (considere
 //o valorzero como positivo)
-// Autor(a)    : Lucas Gabriel Dos Santos Pereira
+// Autor(a)    : Guilherme Custódio Nieto
 // Data atual  : 06/04/2026
 Var
    // Seção de Declarações das variáveis
