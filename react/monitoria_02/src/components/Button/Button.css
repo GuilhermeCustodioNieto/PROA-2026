@@ -1,0 +1,10 @@
+.botao {
+  color: #013189;
+  width: 500px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.botao h2 {
+  color: black;
+}
